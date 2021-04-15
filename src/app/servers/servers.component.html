@@ -1,5 +1,9 @@
 <button 
-class='btn btn-primary' [disabled]="!allowNewServer">Add Server</button>
+class='btn btn-primary'
+[disabled]="!allowNewServer" 
+(click)="onCreateServer()">Add Server</button>
+<P>{{serverCreationStatus}}</P>
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
 <app-server></app-server>
 <h3>checking styles</h3>
